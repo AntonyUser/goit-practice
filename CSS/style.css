@@ -25,6 +25,8 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid tomato;
@@ -45,12 +47,49 @@ ol {
     padding: 0;
 }
 
+.img {
+    display: block;
+    flex-basis: 100%;
+    height: auto;
+}
+
+.upper-title {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey-text-color);
+}
+
+.section-title {
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--grey-text-color);
+}
+
+.subtitle {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
 
 /* HEADER */
 
 .header .container {
     display: flex;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .navigation-list {
@@ -81,6 +120,10 @@ ol {
 .btn {
     padding: 12px 20px;
     background-color: transparent;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
 }
 
 .btn:hover,
@@ -111,13 +154,6 @@ ol {
     color: var(--accent-color);
 }
 
-.contact-us .btn {
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    border: 1px solid var(--accent-color);
-    border-radius: 25px;
-}
-
 
 /* MAIN */
 
@@ -127,6 +163,8 @@ ol {
 .hero .container {
     display: flex;
     align-items: flex-end;
+    padding-bottom: 40px;
+    padding-top: 0;
 }
 
 .hero .socials {
@@ -189,7 +227,6 @@ ol {
 
 .slider-btn-group {
     margin-left: auto;
-    padding-bottom: 40px;
 }
 
 .slider-btn-group .list {
@@ -235,4 +272,77 @@ ol {
 
 .about-us .container {
     display: flex;
+}
+
+.about-us .list {
+    display: flex;
+}
+
+.about-us .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-us-group {
+    padding-left: 64px;
+    padding-right: 36px;
+}
+
+.about-us-group .upper-title {
+    margin-top: 0;
+}
+
+.about-us-group .upper-title,
+.about-us-group .section-title,
+.about-us-group .subtitle {
+    margin-bottom: 20px;
+}
+
+.about-us-group .description {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    margin-bottom: 40px;
+}
+
+.about-us-group .btn {
+    color: var(--grey-text-color);
+}
+
+
+/* SERVICES AND PRICES */
+
+.services-and-prices-list {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.services-and-prices .upper-title {
+    margin-bottom: 20px;
+}
+
+.services-and-prices .section-title {
+    margin-bottom: 40px;
+}
+
+.services-and-prices .btn {
+    display: block;
+    margin: auto;
+}
+
+.services-and-prices-data {
+    width: 585px;
+}
+
+.services-and-prices-data .inner-list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.services-and-prices-data .inner-item:not(:last-child) {
+    margin-bottom: 20px;
 }
