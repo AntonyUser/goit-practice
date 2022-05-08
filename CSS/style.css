@@ -121,6 +121,9 @@ ol {
 
 /* MAIN */
 
+
+/* HERO */
+
 .hero .container {
     display: flex;
     align-items: flex-end;
@@ -225,4 +228,11 @@ ol {
     text-align: left;
     padding-left: 0;
     padding-right: auto;
+}
+
+
+/* ABOUT US */
+
+.about-us .container {
+    display: flex;
 }
